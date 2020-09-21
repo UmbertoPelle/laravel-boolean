@@ -44,9 +44,35 @@ header nav ul li a:hover {
   flex-wrap: wrap;
 }
 
-.container .img-container img {
+.container .img-container .content {
   width: 30%;
   margin: 10px;
+  position: relative;
+}
+
+.container .img-container .content:hover .layout {
+  display: block;
+}
+
+.container .img-container img {
+  max-width: 100%;
+}
+
+.container .img-container .layout {
+  height: 98%;
+  width: 100%;
+  background: #0000008c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  padding: 1%;
+  overflow-y: auto;
+}
+
+.container .img-container .layout p {
+  color: white;
 }
 
 footer {

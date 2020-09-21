@@ -42,9 +42,40 @@ header{
     align-items: center;
     flex-wrap: wrap;
 
-    img{
+    .content{
       width: 30%;
       margin: 10px;
+      position: relative;
+
+      &:hover .layout{
+        display: block;
+      }
+    }
+
+    img{
+      max-width: 100%;
+    }
+
+    .layout{
+      height: 98%;
+      width:100%;
+      background: #0000008c;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: none;
+
+      text-align: center;
+
+      padding: 1%;
+
+      overflow-y: auto;
+
+      p{
+        color: white;
+      }
     }
   }
 }

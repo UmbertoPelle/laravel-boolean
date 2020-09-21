@@ -7,7 +7,12 @@
   <div class="img-container">
     @foreach ($data as $d)
       @if ($d['tipo'] == 'lunga')
-        <img src="{{$d['src']}}" alt="">
+        <div class="content">
+          <img src="{{$d['src']}}" alt="">
+          <div class="layout">
+            <p>{{$d['descrizione']}}</p>
+          </div>
+        </div>
       @endif
     @endforeach
   </div>
@@ -17,7 +22,12 @@
   <div class="img-container">
     @foreach ($data as $d)
       @if ($d['tipo'] == 'corta')
-        <img src="{{$d['src']}}" alt="">
+        <div class="content">
+          <img src="{{$d['src']}}" alt="">
+          <div class="layout">
+            <p>{{$d['descrizione']}}</p>
+          </div>
+        </div>
       @endif
     @endforeach
   </div>
@@ -27,7 +37,12 @@
   <div class="img-container">
     @foreach ($data as $d)
       @if ($d['tipo'] == 'cortissima')
-        <img src="{{$d['src']}}" alt="">
+        <div class="content">
+          <img src="{{$d['src']}}" alt="">
+          <div class="layout">
+            <p>{{$d['descrizione']}}</p>
+          </div>
+        </div>
       @endif
     @endforeach
   </div>
